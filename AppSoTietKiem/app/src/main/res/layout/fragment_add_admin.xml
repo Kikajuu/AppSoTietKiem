@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adminFragment.AddAdminFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_CardViewtkn"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/cam"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/tvSoSo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tài khoản nguồn: 1900190099 - TRINH VAN VU"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp"
+            android:id="@+id/Sodu"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="10.000.000 VND" />
+    </android.support.v7.widget.CardView>
+
+    <EditText
+        android:id="@+id/edtSoTaiKhoanGui"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/custom_edt"
+        android:ems="10"
+        android:hint="Số tài khoản"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtSOtiengui"
+        android:layout_width="378dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edtSoTaiKhoanGui"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/custom_edt"
+        android:ems="10"
+        android:hint="Số tiền"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnNapTien"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSOtiengui"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="94dp"
+        android:background="@drawable/hinhvuongbogoc"
+        android:text="Chuyển tiền"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

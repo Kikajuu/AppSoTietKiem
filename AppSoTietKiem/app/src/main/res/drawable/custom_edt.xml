@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- EditText không được tập trung -->
+    <item android:state_focused="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#E0E0E0" /> <!-- Màu nền khi không tập trung -->
+            <stroke android:color="#CCCCCC" android:width="1dp" /> <!-- Màu viền -->
+            <padding android:left="16dp" android:right="16dp" android:top="8dp" android:bottom="8dp" /> <!-- Khoảng cách từ viền đến văn bản -->
+        </shape>
+    </item>
+    <!-- EditText được tập trung -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#FFFFFF" /> <!-- Màu nền khi tập trung -->
+            <stroke android:color="#009688" android:width="2dp" /> <!-- Màu viền khi tập trung -->
+            <padding android:left="16dp" android:right="16dp" android:top="8dp" android:bottom="8dp" /> <!-- Khoảng cách từ viền đến văn bản khi tập trung -->
+        </shape>
+    </item>
+</selector>

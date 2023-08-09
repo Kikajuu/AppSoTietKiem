@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.AddFragment">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_CardViewtkn"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/cam"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/tvSTKNGUON"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp"
+            android:id="@+id/tvSoduNGUON"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" " />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTkTienGuiSo"
+        android:layout_width="364dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/id_CardViewtkn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="32dp"
+        android:text="Tài Khoản Tiền Gửi Số của tôi"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/edtSoTienGui1"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvTkTienGuiSo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/custom_edt"
+        android:ems="10"
+        android:hint="Số tiền"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtTenSo"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvTkTienGuiSo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/custom_edt"
+        android:ems="10"
+        android:hint="Tên Sổ"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinnerKyHan"
+        android:layout_width="378dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/custom_edt" />
+
+    <Button
+        android:id="@+id/btnThemSoTietKiem"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="98dp"
+        android:background="@drawable/hinhvuongbogoc"
+        android:text="Thêm"
+        android:textColor="@color/white" />
+</RelativeLayout>

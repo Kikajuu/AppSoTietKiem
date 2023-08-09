@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ky_han_array">
+        <item>3 tháng</item>
+        <item>6 tháng</item>
+        <item>12 tháng</item>
+        <!-- Thêm các kì hạn khác nếu cần -->
+    </string-array>
+</resources>
